@@ -12,6 +12,17 @@ function mainController ($scope) {
     $scope.getCols = function () {
         return R.range(1, $scope.userCols+1);
     }
+
+    $scope.getTableValue = function (row, col) {
+        return row * col;
+    }
+
+    $scope.showTable = function () {
+        return $scope.userRows > 0 && $scope.userCols > 0;
+    }
+
+
+
 }
 
 
